@@ -51,7 +51,7 @@ module Valgrind
                         arg3 : UInt64,
                         arg4 : UInt64,
                         arg5 : UInt64) : UInt64
-    dst :: UInt64
+    dst = 0_u64
     args = [request, arg1, arg2, arg3, arg4, arg5]
     asm("
          rolq $$3,  %rdi
